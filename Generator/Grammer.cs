@@ -17,7 +17,6 @@ public class Grammer : MonoBehaviour
         grammers.Add(new KeyValuePair<string, string>("V", "VKVLV"));
         grammers.Add(new KeyValuePair<string, string>("V", "VEV"));
         grammers.Add(new KeyValuePair<string, string>("V", "VNV"));
-        Random.InitState(System.DateTime.Now.Millisecond);
     }
 
     // Update is called once per frame
@@ -123,12 +122,12 @@ public class Grammer : MonoBehaviour
             }
             else if (gram[i] == 'T')
             {
-                gameObject = (GameObject)PrefabUtility.InstantiatePrefab(objectTable[4]);
+                gameObject = GameObject.Instantiate(objectTable[4]);
                 WorldControl.deployedObjects[loc] = gameObject;
             }
             else if (gram[i] == 'K')
             {
-                gameObject = (GameObject)PrefabUtility.InstantiatePrefab(objectTable[1]);
+                gameObject = GameObject.Instantiate(objectTable[1]);
                 WorldControl.deployedObjects[loc] = gameObject;
             }
             else if (gram[i] == 'L')
@@ -139,7 +138,7 @@ public class Grammer : MonoBehaviour
                     {
                         if (WorldControl.roomConnect[topo[i][p], topo[i + 1][q]] == 1)
                         {
-                            gameObject = (GameObject)PrefabUtility.InstantiatePrefab(objectTable[2]);
+                            gameObject = GameObject.Instantiate(objectTable[2]);
                             
                             Vector2Int gateLoc;
                             if (WorldControl.gateLoc.ContainsKey(new Vector2Int(topo[i][p], topo[i + 1][q])))
@@ -158,13 +157,13 @@ public class Grammer : MonoBehaviour
             }
             else if (gram[i] == 'E')
             {
-                gameObject = (GameObject)PrefabUtility.InstantiatePrefab(objectTable[3]);
+                gameObject = GameObject.Instantiate(objectTable[3]);
                 gameObject.transform.position = new Vector3(loc.x, loc.y, -0.5f);
                 loc = WorldControl.RandomLoc(roomId);
-                gameObject = (GameObject)PrefabUtility.InstantiatePrefab(objectTable[3]);
+                gameObject = GameObject.Instantiate(objectTable[3]);
                 gameObject.transform.position = new Vector3(loc.x, loc.y, -0.5f);
                 loc = WorldControl.RandomLoc(roomId);
-                gameObject = (GameObject)PrefabUtility.InstantiatePrefab(objectTable[3]);
+                gameObject = GameObject.Instantiate(objectTable[3]);
 
             }
             else if (gram[i] == 'N')

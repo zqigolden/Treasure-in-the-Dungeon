@@ -20,6 +20,7 @@ public class WorldControl : MonoBehaviour
     static System.Random random = new System.Random();
     public static Dictionary<Vector2Int, GameObject> deployedObjects = new Dictionary<Vector2Int, GameObject>();
     public GameObject gameResult;
+    public GameObject overlapObj = null;
     public static bool gameOver = true;
     public enum TileType
     {
@@ -74,15 +75,16 @@ public class WorldControl : MonoBehaviour
         int y = Convert.ToInt32(vec3.y);
         return new Vector2Int(x, y);
     }
-    public static void LoadMap()
+    public void LoadMap()
     {
         mapLoad = false;
         roomCount = 0;
         roomConnect = new int[100, 100];
         gateLoc = new Dictionary<Vector2Int, Vector2Int>();
         deployedObjects = new Dictionary<Vector2Int, GameObject>();
-        var tilesObj = GameObject.Find("Overlap/output-overlap/tiles");
-        if (tilesObj.transform.childCount == 0)
+        var tilesObj = overlapObj.transform.GetChild(0).GetChild(0);
+        //var tilesObj = GameObject.Find("/Overlap/output-overlap/tiles");
+        if (tilesObj == null || tilesObj.transform.childCount == 0)
         {
             return;
         }
@@ -150,7 +152,7 @@ public class WorldControl : MonoBehaviour
         map[y, x] = tile;
         var oldObj = objMap[y, x];
         var newType = tilePrefabs[tile];
-        var newObj = (GameObject)PrefabUtility.InstantiatePrefab(newType, parent: oldObj.transform.parent);
+        var newObj = GameObject.Instantiate(newType, parent: oldObj.transform.parent);
         newObj.transform.position = oldObj.transform.position;
         newObj.transform.rotation = oldObj.transform.rotation;
         newObj.transform.parent = oldObj.transform.parent;

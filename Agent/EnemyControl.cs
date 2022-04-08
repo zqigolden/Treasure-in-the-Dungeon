@@ -83,7 +83,7 @@ public class EnemyControl : MonoBehaviour
 
     public Vector2Int GetLoc()
     {
-        return WorldControl.GetLoc(gameObject.transform.position);
+        return WorldControl.GetLoc(transform.position);
     }
 
     public int GetRoomId()
@@ -173,7 +173,7 @@ public class EnemyControl : MonoBehaviour
         }
         var next = path[1];
         // print("" + next + " " + gameObject.transform.position + new Vector3(next.x, next.y, 0));
-        gameObject.transform.position = new Vector3(next.x, next.y, gameObject.transform.position.z);
+        transform.position = new Vector3(next.x, next.y, transform.position.z);
         return true;
     }
     public Vector2Int RandomWalk()

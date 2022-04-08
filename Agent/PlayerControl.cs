@@ -84,7 +84,7 @@ public class PlayerControl : MonoBehaviour
         switch (WorldControl.GetTile(newLoc))
         {
             case (int)WorldControl.TileType.Grass:
-                moveValue += 1.5f;
+                moveValue += 1.25f;
                 sound = 5;
                 UpdateSpeedText("A little slow");
                 break;
@@ -94,8 +94,8 @@ public class PlayerControl : MonoBehaviour
                 UpdateSpeedText("Normal speed");
                 break;
             case (int)WorldControl.TileType.Road:
-                moveValue += 0.75f;
-                sound = 20;
+                moveValue += 0.5f;
+                sound = 15;
                 UpdateSpeedText("Running on the road");
                 break;
             case (int)WorldControl.TileType.Water:
@@ -122,9 +122,6 @@ public class PlayerControl : MonoBehaviour
 
     public Vector2Int GetLoc()
     {
-        Vector3 vec3 = transform.position;
-        int x = Convert.ToInt32(vec3.x);
-        int y = Convert.ToInt32(vec3.y);
-        return new Vector2Int(x, y);
+        return WorldControl.GetLoc(transform.position);
     }
 }
