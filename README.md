@@ -6,6 +6,8 @@ This game is developed for the module *ECS7016P Interactive Agents and Procedura
 
 Developed in Unity 2020.3.26f1
 
+[Demo video](https://youtu.be/sui3Osyr2zE)
+
 ## Introduction
 
 In this game, players will adventure in randomly generated dungeons, traverse different terrains, escape from enemies, and finally collect treasures. It is hard, Try it!
