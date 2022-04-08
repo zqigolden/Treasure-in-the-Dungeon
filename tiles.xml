@@ -1,0 +1,49 @@
+<set>
+  <tiles>
+<tile name="Assets/Generator/WFC_tiles/Wall" symmetry="X" weight="1.0"/>
+<tile name="Assets/Generator/WFC_tiles/Water" symmetry="X" weight="1.0"/>
+<tile name="Assets/Generator/WFC_tiles/Sand" symmetry="X" weight="1.0"/>
+<tile name="Assets/Generator/WFC_tiles/Road" symmetry="X" weight="1.0"/>
+<tile name="Assets/Generator/WFC_tiles/Grass" symmetry="X" weight="1.0"/>
+	</tiles>
+<neighbors>  <neighbor left="Assets/Generator/WFC_tiles/Wall 0" right="Assets/Generator/WFC_tiles/Wall 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Wall 1" right="Assets/Generator/WFC_tiles/Wall 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Wall 0" right="Assets/Generator/WFC_tiles/Sand 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Sand 0" right="Assets/Generator/WFC_tiles/Grass 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Sand 1" right="Assets/Generator/WFC_tiles/Grass 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Grass 0" right="Assets/Generator/WFC_tiles/Grass 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Grass 1" right="Assets/Generator/WFC_tiles/Grass 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Grass 1" right="Assets/Generator/WFC_tiles/Water 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Grass 0" right="Assets/Generator/WFC_tiles/Wall 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Sand 0" right="Assets/Generator/WFC_tiles/Road 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Sand 1" right="Assets/Generator/WFC_tiles/Sand 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Road 0" right="Assets/Generator/WFC_tiles/Road 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Road 1" right="Assets/Generator/WFC_tiles/Road 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Road 0" right="Assets/Generator/WFC_tiles/Wall 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Sand 1" right="Assets/Generator/WFC_tiles/Road 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Wall 0" right="Assets/Generator/WFC_tiles/Grass 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Grass 0" right="Assets/Generator/WFC_tiles/Water 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Water 0" right="Assets/Generator/WFC_tiles/Water 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Water 1" right="Assets/Generator/WFC_tiles/Water 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Water 0" right="Assets/Generator/WFC_tiles/Wall 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Wall 1" right="Assets/Generator/WFC_tiles/Road 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Wall 0" right="Assets/Generator/WFC_tiles/Road 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Road 1" right="Assets/Generator/WFC_tiles/Sand 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Water 1" right="Assets/Generator/WFC_tiles/Grass 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Road 0" right="Assets/Generator/WFC_tiles/Sand 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Grass 1" right="Assets/Generator/WFC_tiles/Wall 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Water 0" right="Assets/Generator/WFC_tiles/Grass 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Sand 0" right="Assets/Generator/WFC_tiles/Sand 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Sand 1" right="Assets/Generator/WFC_tiles/Wall 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Road 1" right="Assets/Generator/WFC_tiles/Wall 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Wall 1" right="Assets/Generator/WFC_tiles/Sand 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Grass 0" right="Assets/Generator/WFC_tiles/Sand 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Sand 0" right="Assets/Generator/WFC_tiles/Wall 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Water 1" right="Assets/Generator/WFC_tiles/Wall 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Wall 1" right="Assets/Generator/WFC_tiles/Grass 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Road 0" right="Assets/Generator/WFC_tiles/Grass 0"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Road 1" right="Assets/Generator/WFC_tiles/Grass 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Grass 1" right="Assets/Generator/WFC_tiles/Sand 1"/>
+  <neighbor left="Assets/Generator/WFC_tiles/Wall 0" right="Assets/Generator/WFC_tiles/Water 0"/>
+	</neighbors>
+</set>
